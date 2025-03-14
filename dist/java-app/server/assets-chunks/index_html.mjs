@@ -1,0 +1,12 @@
+export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
+  <meta charset="utf-8">
+  <title>JavaApp</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles-5INURTSO.css"><style ng-app-id="ng">nav[_ngcontent-ng-c1865715713]{background-color:#4caf50;padding:10px 20px;border-radius:5px}ul[_ngcontent-ng-c1865715713]{list-style-type:none;padding:0;margin:0;display:flex}li[_ngcontent-ng-c1865715713]{margin-right:20px}a[_ngcontent-ng-c1865715713]{text-decoration:none;color:#fff;font-weight:700;transition:color .3s}a[_ngcontent-ng-c1865715713]:hover{color:gold}router-outlet[_ngcontent-ng-c1865715713]{margin-top:20px;padding:20px;border-radius:5px}</style><style ng-app-id="ng">h1[_ngcontent-ng-c3162516144]{margin-left:40%}</style></head>
+<body><!--nghm--><script type="text/javascript" id="ng-event-dispatch-contract">(()=>{function p(t,n,r,o,e,i,f,m){return{eventType:t,event:n,targetElement:r,eic:o,timeStamp:e,eia:i,eirp:f,eiack:m}}function u(t){let n=[],r=e=>{n.push(e)};return{c:t,q:n,et:[],etc:[],d:r,h:e=>{r(p(e.type,e,e.target,t,Date.now()))}}}function s(t,n,r){for(let o=0;o<n.length;o++){let e=n[o];(r?t.etc:t.et).push(e),t.c.addEventListener(e,t.h,r)}}function c(t,n,r,o,e=window){let i=u(t);e._ejsas||(e._ejsas={}),e._ejsas[n]=i,s(i,r),s(i,o,!0)}window.__jsaction_bootstrap=c;})();
+</script><script>window.__jsaction_bootstrap(document.body,"ng",["click"],[]);</script>
+  <app-root ng-version="19.2.1" _nghost-ng-c1865715713 ngh="1" ng-server-context="ssg"><nav _ngcontent-ng-c1865715713><ul _ngcontent-ng-c1865715713><li _ngcontent-ng-c1865715713><a _ngcontent-ng-c1865715713 routerlink href="/" jsaction="click:;">Главная</a></li><li _ngcontent-ng-c1865715713><a _ngcontent-ng-c1865715713 routerlink="login" href="/login" jsaction="click:;">Регистрация</a></li></ul></nav><router-outlet _ngcontent-ng-c1865715713></router-outlet><app-main-page _nghost-ng-c3162516144 ngh="0"><h1 _ngcontent-ng-c3162516144>Главная страница</h1><p _ngcontent-ng-c3162516144>Здесь должна быть страничка</p></app-main-page><!----></app-root>
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-2JM6EMHT.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"c":{"8":[{"i":"c3162516144","r":1}]}}]}</script></body></html>`;
