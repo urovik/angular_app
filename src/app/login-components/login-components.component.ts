@@ -43,7 +43,7 @@ export class LoginComponentsComponent {
       id: form.value.id
     }
 
-    this.http.delete(`http://localhost:8080/users/${body.id}`).subscribe({
+    this.http.delete(`http://194.87.56.253:8082/users/${body.id}`).subscribe({
       next: (response) => {
         console.log("пользователь удален", response);
         form.resetForm();
@@ -77,7 +77,7 @@ export class LoginComponentsComponent {
     console.log(body);
 
     //POST request to the backend
-    this.http.post("http://localhost:8080/users", body).subscribe({
+    this.http.post("http://194.87.56.253:8082/users", body).subscribe({
       next: (response) => {
         console.log("пользователь зарегистрирован", response);
         form.resetForm();
@@ -101,7 +101,7 @@ export class LoginComponentsComponent {
       name: form.value.name
     }
 
-     this.http.put(`http://localhost:8080/users/${bodyId.id}`,newUser).subscribe({
+     this.http.put(`http://194.87.56.253:8082/users/${bodyId.id}`,newUser).subscribe({
       next: (response) => {
         console.log("Пользователь изменен",response)
         form.resetForm();
@@ -112,7 +112,7 @@ export class LoginComponentsComponent {
   }
   // Метод для получения пользователей
   getUsers(): Observable<User[]> {
-    return this.http.get<User[]>('http://localhost:8080/users');
+    return this.http.get<User[]>('http://194.87.56.253:8082/users');
   }
 }
 
