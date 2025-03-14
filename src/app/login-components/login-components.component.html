@@ -1,0 +1,66 @@
+<div class="allbutton">
+  <form #myForm="ngForm" novalidate (ngSubmit)="onSubmit(myForm)">
+  <div class="LoginButton">
+  <label>логин: </label>
+  <input type="text" name="email" placeholder="Введите ваш логин" ngModel>
+  </div>
+  <div>
+    <label>имя: </label>
+    <input type="text" name="name" placeholder="Введите имя" ngModel>
+  </div>
+  <div>
+        <label>дата рождения: </label>
+        <input type="date" name="birth" placeholder="Введите вашу дату рождения" ngModel>
+  </div>
+      <button
+        type="submit">зарегистрироваться
+      </button>
+    </form>
+    <div class="form-divider">
+    <form #myForm="ngForm" novalidate (ngSubmit)="onSubmitAll(myForm)">
+      <button type="submit">
+        получить всех пользователей
+      </button>
+    </form>
+     </div>
+     <div>
+      <form #DeleteUsers="ngForm" novalidate (ngSubmit)="onSubmitDelete(DeleteUsers)">
+        <label>ID для удаления данных о пользователе:</label>
+        <input type="number" name="id" placeholder="Введите id юзера" ngModel required>
+        <div>
+        <button type="submit">
+          удалить пользователя
+        </button>
+      </div>
+      </form>
+    </div>
+
+    <div>
+      <form #PutUser="ngForm" novalidate (ngSubmit)="onSubmitPut(PutUser)">
+        <label>ID для изменения данных о пользователе:</label>
+        <input type="number" name="id" placeholder="Введите id юзера" ngModel required>
+        <input type="text" name="email" placeholder="Введите новый email" ngModel required>
+        <input type="text" name="name" placeholder="Введите новый имя" ngModel required>
+        <div>
+        <button type="submit">
+          изменить пользователя
+        </button>
+      </div>
+      </form>
+    </div>
+
+     <!-- Вывод пользователей -->
+  <div>
+    <h3>Список пользователей:</h3>
+    <ul>
+      <li *ngFor="let user of users">
+        {{ user.name }} ({{ user.email }}) - Дата рождения: {{ user.birth | date }}
+      </li>
+    </ul>
+  </div>
+
+  </div>
+
+
+
+
